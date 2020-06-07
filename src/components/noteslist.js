@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './button.js'
 import '../css/noteslist.css'
 
 function NotesList (props) {
@@ -17,10 +18,11 @@ function NotesList (props) {
                   : <p>{note.description}</p> }
                </div>
                { props.editNote.editing === note.id
-               ? <button className="save" onClick={() => props.onSaveClick(note.id)}>Save</button>
-               : <button className="edit" onClick={() => props.onEditClick(note.id)}>Edit</button>
+               ? <Button cls="save" noteId={note.id} onClick={props.onSaveClick} buttonText="Save" />
+               : <Button cls="edit" noteId={note.id} onClick={props.onEditClick} buttonText="Edit" />
                }
-               <button className="delete" onClick={() => { props.onDeleteClick(note.id)}}>Delete</button>
+
+               <Button cls="delete" noteId={note.id} onClick={props.onDeleteClick} buttonText="Delete" />
               </li>
            ))}
          </ul>

@@ -1,0 +1,41 @@
+button {
+   color: white;
+   padding: .6rem 1.1rem;
+   border: none;
+   border-radius: .25rem;
+   transition: .2s all;
+   margin: 0 .5rem;
+   cursor: pointer;
+}
+
+.add {
+   background-color: green;
+}
+
+.add:hover, .add:focus {
+   background-color: darkgreen;
+}
+
+.edit {
+   background-color: orange;
+}
+
+.edit:hover, .edit:focus {
+   background-color: darkorange;
+}
+
+.save {
+   background-color: green;
+}
+
+.save:hover, .save:focus {
+   background-color: darkgreen;
+}
+
+.delete {
+   background-color: red;
+}
+
+.delete:hover, .delete:focus {
+   background-color: darkred;
+}
