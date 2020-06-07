@@ -8,3 +8,11 @@ input {
    border: 1px solid gray;
    border-radius: .25rem;
 }
+
+.add {
+   background-color: green;
+}
+
+.add:hover, .add:focus {
+   background-color: darkgreen;
+}
